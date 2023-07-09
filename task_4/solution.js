@@ -33,5 +33,4 @@ function renderProductsCards(json){
         addProduct(products[i]);
 
      }
-
  }
