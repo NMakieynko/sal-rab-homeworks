@@ -48,7 +48,7 @@ function calcDiscount(sum, min, discount) {
     // создайте переменную discountSum
 
     if (productsSum >= discountMinSum) {
-        discountSum = discountPart * productsSum;
+        discountSum = discountPart * productsSum / 100;
     }
     else {
         discountSum = 0;
@@ -87,8 +87,9 @@ function calcInvoice({sum, discountMinSum, discountPart, shippingFreeMinSum, shi
 
     let freeShipping;
 
-    
+    Boolean (freeShipping = shippingSum);
 
+    
     // запишите без использования if или любых других условий:
     // если shippingSum равно нулю, то freeShipping должна быть равна true, иначе freeShipping должна быть равна false
 
